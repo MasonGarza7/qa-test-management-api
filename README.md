@@ -36,6 +36,12 @@ Key integrity rules:
 - `test_results` enforces **one result per (test_run_id, test_case_id)** via a unique constraint.
 - `test_results.status` is enforced as a **PostgreSQL ENUM**: `pass | fail | blocked | skipped`.
 
+### System Architecture
+![SystemArchitecture:](diagrams/SystemArchitecture.png)
+
+### Database Relationships
+![DatabaseRelationships:](diagrams/DatabaseRelationships.png)
+
 ---
 
 ## API Docs (Swagger)
